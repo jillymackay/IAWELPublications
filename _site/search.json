@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "IAWEL Publications",
+    "section": "",
+    "text": "This website collates all of the Publications and Research Outputs from the MSc International Animal Welfare Ethics and LAw"
+  },
+  {
+    "objectID": "outputs.html",
+    "href": "outputs.html",
+    "title": "Other Types of Output",
+    "section": "",
+    "text": "We know that not all research outputs are peer reviewed papers, so here is a list of other outputs we share"
+  },
+  {
+    "objectID": "further.html",
+    "href": "further.html",
+    "title": "Further Work from IAWEL Students",
+    "section": "",
+    "text": "Many of our IAWEL students go on to do great things, so here’s what they’ve done since being part of our programme"
+  }
+]

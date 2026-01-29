@@ -1,0 +1,52 @@
+project:
+  type: website
+
+website:
+  title: "IAWEL Publications"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: dissertations.qmd
+        text: "Publications from IAWEL Dissertations"
+      - href: outputs.qmd
+        text: "Other Types of Output"
+      - href: further.qmd
+        text: "Further Work"
+  cookie-consent: false
+      
+format:
+  html:
+    theme: pulse
+    css: styles.css
+    toc: true
+
+taxonomies:
+  tag: tags
+  category: categories
+  publication_type: publication_types
+  author: authors
+  
+  
+  
+permalinks:
+  event: '/talk/:slug/'
+  tags: '/tag/:slug/'
+  categories: '/category/:slug/'
+  publication_types: '/publication-type/:slug/'
+  
+
+
+# Localization
+
+locale:
+  date_format: 'Jan 2, 2006'
+  time_format: '15:04'
+  address_format: en-gb
+  
+  
+  
+# Freeze computations for Quarto
+execute:
+  freeze: auto
+
