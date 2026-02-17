@@ -1,0 +1,21 @@
+---
+title: "Understanding and application of learning theory in UK based equestrians"
+date: '2017-12-12'
+categories:
+  - student dissertations
+  - iawel
+  - 
+publication: "Anthrozoös"
+authors: [Brown, Sarah., Connor, Melanie.]
+abstract: "Learning in equines occurs through a predictable chain of stimulus–response–consequence processing. Whether the behavior persists will depend on the nature and timing of the consequence, whether it punishes or reinforces the response behavior. Knowledge and application of learning theory in UK-based equestrians was assessed by an online survey which probed three aspects of knowledge and understanding. Fifty-eight UK individuals (91% female) took part in the study and had an average of 12.4 years’ equestrian experience. Almost one-third (31%) described themselves as professional equestrians. A questionnaire was used to assess participants’ ability to identify and describe terminology associated with learning theory; self-report on their own knowledge and training methodology; and to express how they would respond in different training situations. Human-focused educational strategies were tested to assess their effectiveness and suitability for increasing understanding of learning theory. Professional equestrians expressed higher levels of subjective knowledge than amateurs (t(27) = –2.752, p = 0.018), with a moderate positive correlation between subjective knowledge and observer-scored knowledge (r = 0.443, p < 0.001). Professionals scored higher than amateurs on all questions asked, however a deficit of knowledge was observed across the board; in particular, in defining positive punishment (professional 38.8%, amateur 12.5% successful) and negative reinforcement (professional 33%, amateur 12.5% successful). Application of both an educational video and a leaflet increased respondents’ ability to correctly define terminology (Video t(8) = –4.07, p = 0.004: Leaflet t(12) = –5.02, p < 0.001). Improving understanding and application of learning theory in amateurs and professionals alike has the potential to improve equine welfare and training outcomes for both leisure and performance horses through reducing wastage attributed to behavioral problems or poor training."
+doi: "10.1080/08927936.2017.1370216"
+image: featured.jpg
+---
+
+
+
+
+
+
+# Citation
+[Download bibtex file](cite.bib)
