@@ -70,9 +70,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-publication',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-authors','listing-title','listing-publication','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -159,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="iawel">iawel <span class="quarto-category-count">(1)</span></div><div class="category" data-category="null">null <span class="quarto-category-count">(1)</span></div><div class="category" data-category="student dissertations">student dissertations <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -172,6 +172,22 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 <div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Title
+        </option>
+     </select>
+  </div>
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
       <input type="text" class="search form-control" placeholder="Filter">
@@ -182,17 +198,34 @@ ul.task-list li input[type="checkbox"] {
 <thead>
 <tr>
 <th>
-Date
+authors
 </th>
 <th>
-Title
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
 </th>
 <th>
 publication
 </th>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
 </tr>
 </thead>
 <tbody class="list">
+<tr data-index="0" data-categories="student dissertations,iawel," data-listing-date-sort="1513036800000" data-listing-file-modified-sort="1771324048170" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Understanding and application of learning theory in UK based equestrians" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-authors">Sarah Brown; Melanie Connor</span>
+</td>
+<td>
+<a href="./dissertations/brown-learning-theory-equestrians/index.html" class="title listing-title">Understanding and application of learning theory in UK based equestrians</a>
+</td>
+<td>
+<span class="listing-publication">Anthrozoös</span>
+</td>
+<td>
+<span class="listing-date">Dec 12, 2017</span>
+</td>
+</tr>
 </tbody>
 
 </table>
