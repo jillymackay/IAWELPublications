@@ -1,3 +1,13 @@
 ---
-title: "Publications from IAWEL Dissertations"
+title: "IAWEL Publications"
+subtitle: "This website collates all of the Publications and Research Outputs from the MSc International Animal Welfare Ethics and Law"
+listing:
+  contents: publication
+  fields: [date, title, publication]
+  sort: "date desc"
+  type: table
+  categories: true
+  date-format: "medium"
+  filter-ui: true
+title-block-banner: true
 ---
